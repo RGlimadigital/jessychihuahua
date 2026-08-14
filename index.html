@@ -1,0 +1,856 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Media kit de Jessy e Angela para parcerias de marcas pet e lifestyle, com mais de 1,6M de visualizações nos três reels de maior alcance."
+    />
+    <title>Jessy × Angela | Media Kit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #1d1b1a;
+        --cream: #f5f0e8;
+        --papaya: #ff6a43;
+        --red: #de3e2a;
+        --line: rgba(29, 27, 26, 0.22);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: var(--cream);
+        font-family: 'DM Sans', Arial, sans-serif;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .hero {
+        min-height: 820px;
+        background: var(--papaya);
+        position: relative;
+        overflow: hidden;
+        padding: 26px 5.5% 32px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .hero:before {
+        content: 'J';
+        position: absolute;
+        font-family: 'Playfair Display', serif;
+        font-size: min(92vw, 1050px);
+        font-style: italic;
+        color: rgba(255, 241, 220, 0.25);
+        right: -3vw;
+        bottom: -24vw;
+        line-height: 0.8;
+        pointer-events: none;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1;
+        font-family: 'DM Mono', monospace;
+        font-size: 12px;
+        letter-spacing: 0.04em;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+      }
+
+      .brand i {
+        font-family: 'Playfair Display', serif;
+        font-size: 20px;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .nav-link {
+        border-bottom: 1px solid var(--ink);
+        padding-bottom: 3px;
+      }
+
+      .hero-content {
+        max-width: 760px;
+        margin: clamp(100px, 14vh, 155px) 0 0;
+        z-index: 1;
+      }
+
+      .eyebrow {
+        font-family: 'DM Mono', monospace;
+        font-size: 11px;
+        letter-spacing: 0.12em;
+        margin: 0 0 20px;
+        font-weight: 500;
+      }
+
+      .hero h1,
+      .proof h2,
+      .section-head h2,
+      .opportunity h2,
+      .contact h2 {
+        font-family: 'Playfair Display', serif;
+        letter-spacing: -0.055em;
+        line-height: 0.89;
+        margin: 0;
+        font-weight: 500;
+      }
+
+      .hero h1 {
+        font-size: clamp(66px, 9vw, 130px);
+      }
+
+      .hero h1 em,
+      h2 em {
+        font-style: italic;
+      }
+
+      .hero-copy {
+        max-width: 490px;
+        line-height: 1.45;
+        font-size: 17px;
+        margin: 34px 0;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 11px;
+      }
+
+      .button {
+        padding: 14px 17px;
+        font-family: 'DM Mono', monospace;
+        font-size: 11px;
+        letter-spacing: 0.07em;
+        display: inline-flex;
+        align-items: center;
+        gap: 16px;
+        transition:
+          transform 0.2s,
+          background 0.2s;
+      }
+
+      .button:hover {
+        transform: translateY(-2px);
+      }
+
+      .button-primary {
+        background: var(--ink);
+        color: var(--cream);
+      }
+
+      .button-primary b {
+        font-size: 17px;
+        line-height: 0;
+      }
+
+      .button-quiet {
+        border: 1px solid rgba(29, 27, 26, 0.55);
+      }
+
+      .hero-stat {
+        margin-top: auto;
+        z-index: 1;
+        display: flex;
+        align-items: flex-end;
+        gap: 15px;
+      }
+
+      .hero-stat strong {
+        font-family: 'Playfair Display', serif;
+        font-size: clamp(55px, 7vw, 97px);
+        letter-spacing: -0.07em;
+        line-height: 0.8;
+        font-weight: 500;
+      }
+
+      .hero-stat span {
+        font-family: 'DM Mono', monospace;
+        font-size: 11px;
+        line-height: 1.35;
+        padding-bottom: 8px;
+      }
+
+      .hero-foot {
+        margin-top: 58px;
+        position: relative;
+        z-index: 1;
+        font-family: 'DM Mono', monospace;
+        font-size: 10px;
+        letter-spacing: 0.1em;
+      }
+
+      .hero-foot span {
+        color: var(--cream);
+        padding: 0 7px;
+      }
+
+      .proof,
+      .reels,
+      .opportunity,
+      .contact {
+        padding: 120px 5.5%;
+      }
+
+      .proof {
+        background: var(--cream);
+      }
+
+      .proof-grid {
+        display: grid;
+        grid-template-columns: 1.15fr 0.65fr;
+        gap: 12%;
+        align-items: end;
+      }
+
+      .proof h2,
+      .section-head h2,
+      .opportunity h2,
+      .contact h2 {
+        font-size: clamp(46px, 6vw, 85px);
+      }
+
+      .proof-copy {
+        font-size: 16px;
+        line-height: 1.48;
+      }
+
+      .proof-copy p:first-child {
+        margin-top: 0;
+      }
+
+      .traits {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        border-top: 1px solid var(--line);
+        margin-top: 94px;
+      }
+
+      .traits div {
+        padding: 16px 16px 6px 0;
+        min-height: 88px;
+        border-right: 1px solid var(--line);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .traits div + div {
+        padding-left: 16px;
+      }
+
+      .traits div:last-child {
+        border: 0;
+      }
+
+      .traits span,
+      .reel-label {
+        font-family: 'DM Mono', monospace;
+        font-size: 10px;
+      }
+
+      .traits strong {
+        font-size: 12px;
+        line-height: 1.14;
+      }
+
+      .reels {
+        background: #1d1b1a;
+        color: var(--cream);
+      }
+
+      .section-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        gap: 40px;
+      }
+
+      .section-head > p {
+        width: 280px;
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.45;
+      }
+
+      .reel-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+        margin-top: 60px;
+      }
+
+      .reel-card {
+        color: var(--cream);
+      }
+
+      .reel-cover {
+        height: min(42vw, 535px);
+        min-height: 370px;
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+      }
+
+      .reel-cover:after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          180deg,
+          transparent 56%,
+          rgba(0, 0, 0, 0.6)
+        );
+        transition: background 0.25s;
+      }
+
+      .reel-card:hover .reel-cover:after {
+        background: linear-gradient(
+          180deg,
+          rgba(255, 106, 67, 0.2),
+          rgba(0, 0, 0, 0.72)
+        );
+      }
+
+      .play {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        z-index: 1;
+        width: 34px;
+        height: 34px;
+        display: grid;
+        place-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.8);
+        border-radius: 50%;
+        font-size: 10px;
+        padding-left: 2px;
+      }
+
+      .rank {
+        position: absolute;
+        bottom: 16px;
+        right: 16px;
+        z-index: 1;
+        font-family: 'Playfair Display', serif;
+        font-size: 62px;
+        line-height: 0.75;
+        font-style: italic;
+      }
+
+      .reel-info {
+        padding-top: 16px;
+      }
+
+      .reel-label {
+        color: #d6cabc;
+      }
+
+      .reel-info strong {
+        display: block;
+        font-family: 'Playfair Display', serif;
+        font-weight: 500;
+        font-size: 36px;
+        letter-spacing: -0.05em;
+        margin: 6px 0 8px;
+      }
+
+      .reel-info small {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 13px;
+        letter-spacing: 0;
+        font-weight: 400;
+      }
+
+      .reel-info div {
+        display: flex;
+        gap: 13px;
+        font-family: 'DM Mono', monospace;
+        font-size: 10px;
+        color: #c8beb2;
+      }
+
+      .reel-info b {
+        display: block;
+        color: var(--papaya);
+        font-family: 'DM Mono', monospace;
+        font-size: 10px;
+        margin-top: 12px;
+        font-weight: 500;
+      }
+
+      .data-note {
+        margin: 50px 0 0;
+        font-family: 'DM Mono', monospace;
+        color: #a89f94;
+        font-size: 9px;
+      }
+
+      .opportunity {
+        background: #e4ddd1;
+      }
+
+      .opportunity h2 {
+        max-width: 800px;
+      }
+
+      .opportunity-grid {
+        display: grid;
+        grid-template-columns: 1.1fr 0.8fr;
+        gap: 15%;
+        margin-top: 65px;
+      }
+
+      .opportunity-grid > p {
+        font-size: 18px;
+        line-height: 1.42;
+        margin: 0;
+      }
+
+      .opportunity ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        border-top: 1px solid var(--line);
+      }
+
+      .opportunity li {
+        border-bottom: 1px solid var(--line);
+        padding: 13px 0;
+        font-family: 'DM Mono', monospace;
+        font-size: 12px;
+      }
+
+      .opportunity li:before {
+        content: '✦';
+        color: var(--red);
+        padding-right: 10px;
+      }
+
+      .contact {
+        background: var(--red);
+        color: #fff5e8;
+        display: grid;
+        grid-template-columns: 1.1fr 0.7fr;
+        gap: 12%;
+        align-items: end;
+      }
+
+      .contact .eyebrow {
+        color: #571e18;
+      }
+
+      .contact-box {
+        border-top: 1px solid rgba(255, 245, 232, 0.55);
+        padding-top: 18px;
+      }
+
+      .contact-box p {
+        line-height: 1.42;
+        max-width: 290px;
+        margin: 0 0 24px;
+      }
+
+      .contact-box .button {
+        background: #fff5e8;
+        color: var(--ink);
+      }
+
+      .contact-box > span {
+        display: block;
+        font-family: 'DM Mono', monospace;
+        font-size: 11px;
+        margin-top: 22px;
+      }
+
+      .contact-box > span a {
+        border-bottom: 1px solid #fff5e8;
+      }
+
+      footer {
+        background: var(--ink);
+        color: #d9cfc2;
+        padding: 19px 5.5%;
+        display: flex;
+        justify-content: space-between;
+        font-family: 'DM Mono', monospace;
+        font-size: 10px;
+        letter-spacing: 0.08em;
+      }
+
+      @media (max-width: 720px) {
+        .hero {
+          min-height: 720px;
+          padding: 22px 24px;
+        }
+
+        .hero-content {
+          margin-top: 100px;
+        }
+
+        .hero-copy {
+          font-size: 15px;
+        }
+
+        .proof,
+        .reels,
+        .opportunity,
+        .contact {
+          padding: 76px 24px;
+        }
+
+        .proof-grid,
+        .opportunity-grid,
+        .contact {
+          grid-template-columns: 1fr;
+          gap: 32px;
+        }
+
+        .traits {
+          grid-template-columns: repeat(2, 1fr);
+          margin-top: 56px;
+        }
+
+        .traits div:nth-child(2) {
+          border-right: 0;
+        }
+
+        .traits div:nth-child(n + 3) {
+          border-top: 1px solid var(--line);
+          padding-top: 16px;
+        }
+
+        .section-head {
+          display: block;
+        }
+
+        .section-head > p {
+          width: auto;
+          margin-top: 25px;
+        }
+
+        .reel-list {
+          grid-template-columns: 1fr;
+          margin-top: 38px;
+        }
+
+        .reel-cover {
+          height: 120vw;
+          min-height: 0;
+        }
+
+        .contact h2 {
+          font-size: 50px;
+        }
+
+        footer {
+          padding: 17px 24px;
+        }
+
+        footer span:nth-child(2) {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <nav aria-label="Navegação principal">
+          <a class="brand" href="#inicio" aria-label="Jessy e Angela, início">
+            <span>JESSY</span>
+            <i>×</i>
+            <span>ANGELA</span>
+          </a>
+          <a class="nav-link" href="#parcerias">PARCERIAS ↗</a>
+        </nav>
+
+        <div class="hero-content" id="inicio">
+          <p class="eyebrow">MEDIA KIT · PET &amp; LIFESTYLE</p>
+          <h1>
+            Pequena no <br />
+            <em>Tamanho.</em>
+            <br />
+            Alcance gigante.
+          </h1>
+          <p class="hero-copy">
+            Jessy é uma chihuahua única: atitude, expressão e timing. Ao lado de
+            Angela, ela transforma cenas do cotidiano em conteúdo que as pessoas
+            querem compartilhar.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#destaques">
+              VER RESULTADOS <b>↓</b>
+            </a>
+            <a
+              class="button button-quiet"
+              href="https://www.instagram.com/angela_frison/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              @ANGELA_FRISON ↗
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="hero-stat"
+          aria-label="Mais de um milhão e seiscentas mil visualizações nos três principais vídeos"
+        >
+          <strong>1,6M+</strong>
+          <span>
+            views nos 3 reels
+            <br />
+            de maior alcance
+          </span>
+        </div>
+
+        <div class="hero-foot">
+          GOIÂNIA, BRASIL <span>•</span> CONTEÚDO ORGÂNICO
+        </div>
+      </section>
+
+      <section class="proof">
+        <p class="eyebrow">POR QUE JESSY</p>
+        <div class="proof-grid">
+          <h2>
+            Não é só uma cachorrinha.
+            <br />
+            <em>É uma personagem.</em>
+          </h2>
+          <div class="proof-copy">
+            <p>
+              Uma dupla com contraste natural: o olhar sofisticado e lifestyle
+              de Angela encontra o carisma espontâneo — e absolutamente
+              inesquecível — da Jessy.
+            </p>
+            <p>
+              O resultado é conteúdo leve, autêntico e altamente compartilhável
+              para marcas que desejam entrar na conversa de forma memorável.
+            </p>
+          </div>
+        </div>
+        <div class="traits">
+          <div>
+            <span>01</span>
+            <strong>
+              PERSONALIDADE
+              <br />
+              MARCANTE
+            </strong>
+          </div>
+          <div>
+            <span>02</span>
+            <strong>
+              ALCANCE
+              <br />
+              COMPROVADO
+            </strong>
+          </div>
+          <div>
+            <span>03</span>
+            <strong>
+              CONTEÚDO
+              <br />
+              ORGÂNICO
+            </strong>
+          </div>
+          <div>
+            <span>04</span>
+            <strong>
+              PET + LIFESTYLE
+              <br />
+              PREMIUM
+            </strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="reels" id="destaques">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">PROVA DE ALCANCE</p>
+            <h2>
+              Os reels que
+              <br />
+              <em>fizeram barulho.</em>
+            </h2>
+          </div>
+          <p>
+            Mais de 1,6 milhão de visualizações reunidas em três publicações,
+            alcançadas organicamente.
+          </p>
+        </div>
+
+        <div class="reel-list">
+          <a
+            class="reel-card"
+            href="https://www.instagram.com/angela_frison/reel/DS8SGBLjSEi/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div
+              class="reel-cover"
+              style="background-image: url('/reel-01.jpg')"
+            >
+              <span class="play">▶</span>
+              <span class="rank">01</span>
+            </div>
+            <div class="reel-info">
+              <span class="reel-label">REEL DE DESTAQUE</span>
+              <strong>888 mil <small>views</small></strong>
+              <div>
+                <span>52,8 mil curtidas</span>
+                <span>876 comentários</span>
+              </div>
+              <b>48,2× acima da base</b>
+            </div>
+          </a>
+
+          <a
+            class="reel-card"
+            href="https://www.instagram.com/angela_frison/reel/DMJaYCKtwIP/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div
+              class="reel-cover"
+              style="background-image: url('/reel-02.jpg')"
+            >
+              <span class="play">▶</span>
+              <span class="rank">02</span>
+            </div>
+            <div class="reel-info">
+              <span class="reel-label">REEL DE DESTAQUE</span>
+              <strong>467 mil <small>views</small></strong>
+              <div>
+                <span>33,6 mil curtidas</span>
+                <span>333 comentários</span>
+              </div>
+              <b>30,7× acima da base</b>
+            </div>
+          </a>
+
+          <a
+            class="reel-card"
+            href="https://www.instagram.com/angela_frison/reel/DajV2wtNsmR/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div
+              class="reel-cover"
+              style="background-image: url('/reel-03.jpg')"
+            >
+              <span class="play">▶</span>
+              <span class="rank">03</span>
+            </div>
+            <div class="reel-info">
+              <span class="reel-label">REEL DE DESTAQUE</span>
+              <strong>270 mil <small>views</small></strong>
+              <div>
+                <span>25,2 mil curtidas</span>
+                <span>1.481 comentários</span>
+              </div>
+              <b>23× acima da base</b>
+            </div>
+          </a>
+        </div>
+
+        <p class="data-note">
+          Dados públicos observados no perfil em agosto de 2026. Os números
+          podem evoluir continuamente.
+        </p>
+      </section>
+
+      <section class="opportunity">
+        <p class="eyebrow">PARA MARCAS QUE QUEREM SER LEMBRADAS</p>
+        <h2>
+          Uma presença que
+          <br />
+          <em>não passa despercebida.</em>
+        </h2>
+        <div class="opportunity-grid">
+          <p>
+            Jessy tem o tipo de carisma que interrompe o scroll — e Angela sabe
+            construir o contexto que transforma atenção em afinidade com a
+            marca.
+          </p>
+          <ul>
+            <li>Reels e campanhas de marca</li>
+            <li>Presença em eventos e ativações</li>
+            <li>Conteúdo pet friendly e lifestyle</li>
+            <li>Experiências, lançamentos e UGC</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="contact" id="parcerias">
+        <div>
+          <p class="eyebrow">VAMOS CRIAR ALGO INESQUECÍVEL?</p>
+          <h2>
+            Sua marca +
+            <br />
+            <em>o carisma da Jessy.</em>
+          </h2>
+        </div>
+        <div class="contact-box">
+          <p>
+            Para propostas, parcerias e convites, fale diretamente com Angela.
+          </p>
+          <a
+            class="button button-primary"
+            href="https://www.instagram.com/angela_frison/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            CHAMAR NO INSTAGRAM ↗
+          </a>
+          <span>
+            Instagram:{' '}
+            <a
+              href="https://www.instagram.com/angela_frison/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              @angela_frison
+            </a>
+          </span>
+        </div>
+      </section>
+
+      <footer>
+        <span>JESSY × ANGELA</span>
+        <span>MEDIA KIT 2026</span>
+      </footer>
+    </main>
+  </body>
+</html>
